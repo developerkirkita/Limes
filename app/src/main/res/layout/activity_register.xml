@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:id="@+id/user_information"
+                  android:orientation="vertical"
+                  android:padding="@dimen/row_padding"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <EditText android:id="@+id/pupil_first_name"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:nextFocusUp="@+id/mobile_number"
+                  android:hint="@string/pupil_first_name_hint"
+                  android:imeOptions="actionDone" />
+
+        <EditText android:id="@+id/pupil_last_name"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:nextFocusUp="@+id/mobile_number"
+                  android:hint="@string/pupil_last_name_hint"
+                  android:imeOptions="actionDone" />
+
+        <EditText android:id="@+id/parent_first_name"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:nextFocusUp="@+id/mobile_number"
+                  android:hint="@string/parent_first_name_hint"
+                  android:imeOptions="actionDone" />
+
+        <EditText android:id="@+id/parent_last_name"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:nextFocusUp="@+id/mobile_number"
+                  android:hint="@string/parent_last_name_hint"
+                  android:imeOptions="actionDone" />
+
+        <EditText android:id="@+id/pupil_mobile_number"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:nextFocusDown="@+id/password"
+                  android:hint="@string/pupil_mobile_number"
+                  android:inputType="phone" />
+
+        <EditText android:id="@+id/parent_mobile_number"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:nextFocusDown="@+id/password"
+                  android:hint="@string/parent_mobile_number"
+                  android:inputType="phone" />
+
+        <TextView android:id="@+id/group_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/group_title"/>
+
+        <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:layout_gravity="center_horizontal"/>
+
+
+        <RelativeLayout android:id="@+id/checkbox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <CheckBox android:id="@+id/class_5"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/class_5"/>
+
+            <CheckBox android:id="@+id/class_6"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:nextFocusLeft="@id/class_5"
+                      android:text="@string/class_6"
+                      android:layout_alignParentTop="true"
+                      android:layout_alignParentRight="true"
+                      android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <TextView android:id="@+id/time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_title"/>
+
+        <CheckBox android:id="@+id/time_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_1"/>
+
+        <CheckBox android:id="@+id/time_2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/time_2"/>
+
+        <CheckBox android:id="@+id/time_3"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/time_3"/>
+
+        <CheckBox android:id="@+id/time_4"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/time_4"/>
+
+
+        <Button android:id="@+id/register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_button"/>
+    </LinearLayout>
+
+</ScrollView>

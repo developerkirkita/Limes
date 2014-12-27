@@ -12,6 +12,7 @@ import java.util.HashMap;
 
 import com.codeholic.limes.adapter.Adapter;
 import com.codeholic.limes.helper.ConnectionDetector;
+import com.codeholic.limes.ui.RegisterActivity;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -27,7 +28,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.ProgressBar;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -53,6 +53,9 @@ public class MainListActivity extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_list);
+
+        //Intent i = new Intent(this, RegisterActivity.class);
+        //startActivity(i);
 
         cd = new ConnectionDetector(getApplicationContext());
         isInternetPresent = cd.isConnectingToInternet();
